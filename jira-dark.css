@@ -157,9 +157,14 @@ color:#0087d7 !important;
 .issue-body-content .module > .mod-header .ops {
   background-color: #333;
 }
-.editable-field:hover {
+.editable-field:hover, .ghx-editable:hover {
   background-color: #333 !important;
   color: #DAD9C2 !important;
+  box-shadow: 0 0 0 1px #666;
+}
+.ghx-editable::after {
+  background-color: #222;
+  border-left-color: #666;
 }
 form.aui.top-label .field-group>label {
   color: #DAD9C2 !important;
@@ -375,5 +380,4 @@ form.aui .text, form.aui .password, form.aui .textarea, form.aui .select, form.a
   background-image: linear-gradient(to right, rgba(57, 57, 57, 0), rgba(57, 57, 57, 1));
 }
 
-}
 }
